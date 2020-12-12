@@ -1,0 +1,103 @@
+.container {
+  margin-left: 230px;
+  left: 230px;
+}
+
+.management-option {
+  border: 2px solid #222D32;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 3rem;
+  font-size: 1.6rem;
+}
+
+.management-option form select {
+  display: block;
+  width: 50%;
+  padding: .375rem 1.75rem .375rem .75rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.management-option form input[type="submit"] {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 4rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1.6rem;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #3C8DBC;
+  border-color: #3C8DBC;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.management-option form input[type="submit"]:hover {
+  background-color: #367FA9;
+  border-color: #367FA9;
+}
+
+.management-option form input[type="submit"]:focus {
+  background-color: #367FA9;
+  border-color: #367FA9;
+  box-shadow: 0 0 0 .25rem rgba(46, 115, 226, 0.5)
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: .25em solid #3C8DBC;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: 1s linear infinite spinner-border;
+}
+
+.report-spinner {
+  display: inline-block;
+  margin-left: 1rem;
+  position: relative;
+  top: 2.3rem;
+  font-size: 2rem;
+  animation: 1s linear infinite spinner-border;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#wrong-att-date {
+  border: 1px solid #ced4da;
+  margin-top: 1.6rem;
+  font-size: 2rem;
+}
+
+#wrong-att-description {
+  display: block;
+  border: 1px solid #ced4da;
+  margin-top: 1.6rem;
+  font-size: 2rem;
+}

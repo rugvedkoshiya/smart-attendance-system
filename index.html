@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/student_navbar.css">
+  <link rel="stylesheet" href="css/progress_pie_color_compiled.css"/>
+  <title>Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <aside class="sidebar">
+      <ul class="text-size-32">
+        <div class="logo"><i class="fas fa-user-check logo-img"></i>SAS</div>
+        <li><a href="#" class="dashboard"><i class="fas fa-tachometer-alt icons"></i>Dashboard</a></li>
+        <li><a href="./reports.html" class="reports"><i class="far fa-file-pdf icons"></i></i>Reports</a></li>
+        <li><a href="./management.html" class="management"><i class="fas fa-tasks icons"></i>Management</a></li>
+      </ul>
+    </aside>
+    <div class="navbar-horizontal">
+      <div class="navbar-horizontal-content">
+        <span class="username text-size-32 userinfo">Koshiya Dev Nareshbhai Laxmanbhai Amarshibhai</span>
+        <div class="notification-group">
+          <button onclick="showNotification()" class="notification-btn fas fa-bell fa-2x userinfo"></button>
+          <div id="notification-dropdown" class="dropdown-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, nam!</p><hr class="notification-line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sapiente dolores sequi illum quae commodi!</p><hr class="notification-line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam beatae ut aspernatur modi ad consequuntur sunt aliquam asperiores non, quos quasi harum, quo porro placeat est, sapiente veritatis magni!</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="sub sub-1">
+      <div class="box">
+        <div class="circle">
+          <div class="progress-pie-color" data-value="100"></div>
+        </div>
+        <button class="subjects-btn" onclick="showModal()">DS</button>
+      </div>
+    </div>
+    <div class="sub sub-2">
+      <div class="box">
+        <div class="circle">
+          <div class="progress-pie-color" data-value="75"></div>
+        </div>
+        <button class="subjects-btn" onclick="showModal()">DBMS</button>
+      </div>
+    </div>
+    <div class="sub sub-3">
+      <div class="box">
+        <div class="circle">
+          <div class="progress-pie-color" data-value="60"></div>
+        </div>
+        <button class="subjects-btn" onclick="showModal()">PS</button>
+      </div>
+    </div>
+    <div class="sub sub-4">
+      <div class="box">
+        <div class="circle">
+          <div class="progress-pie-color" data-value="40"></div>
+        </div>
+        <button class="subjects-btn" onclick="showModal()">DF</button>
+      </div>
+    </div>
+    <div class="sub sub-5">
+      <div class="box">
+        <div class="circle">
+          <div class="progress-pie-color" data-value="97"></div>
+        </div>
+        <button class="subjects-btn" onclick="showModal()">IC</button>
+      </div>
+    </div>
+    <div class="sub sub-6">
+      <div class="box">
+        <div class="circle">
+          <div class="progress-pie-color" data-value="17"></div>
+        </div>
+        <button class="subjects-btn" onclick="showModal()">DE</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="subjects-modal">
+      <p class="sub-data">Data Structure (DS)<br>3130702<br>Sejal Patel<br>18/20<br><button id="subjects-btn-close" onclick="hideModal()">Close</button></p>
+      <div class="calendar">
+        <h2>November 2020</h2>
+        <div class="calendar__date">
+          <div class="calendar__day">M</div>
+          <div class="calendar__day">T</div>
+          <div class="calendar__day">W</div>
+          <div class="calendar__day">T</div>
+          <div class="calendar__day">F</div>
+          <div class="calendar__day">S</div>
+          <div class="calendar__day">S</div>
+          <div class="calendar__number"></div>
+          <div class="calendar__number"></div>
+          <div class="calendar__number"></div>
+          <div class="calendar__number present">1</div>
+          <div class="calendar__number present">2</div>
+          <div class="calendar__number ">3</div>
+          <div class="calendar__number">4</div>
+          <div class="calendar__number present">5</div>
+          <div class="calendar__number present">6</div>
+          <div class="calendar__number ">7</div>
+          <div class="calendar__number absent">8</div>
+          <div class="calendar__number">9</div>
+          <div class="calendar__number present">10</div>
+          <div class="calendar__number">11</div>
+          <div class="calendar__number present">12</div>
+          <div class="calendar__number absent">13</div>
+          <div class="calendar__number">14</div>
+          <div class="calendar__number">15</div>
+          <div class="calendar__number">16</div>
+          <div class="calendar__number present">17</div>
+          <div class="calendar__number">18</div>
+          <div class="calendar__number present">19</div>
+          <div class="calendar__number present">20</div>
+          <div class="calendar__number absent">21</div>
+          <div class="today">22</div>
+          <div class="calendar__number">23</div>
+          <div class="calendar__number">24</div>
+          <div class="calendar__number">25</div>
+          <div class="calendar__number">26</div>
+          <div class="calendar__number">27</div>
+          <div class="calendar__number">28</div>
+          <div class="calendar__number">29</div>
+          <div class="calendar__number">30</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/05499ccf49.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/student_navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/student_navbar.css">
+  <link rel="stylesheet" href="./css/management.css">
+  <title>Management</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <aside class="sidebar">
+      <ul class="text-size-32">
+        <div class="logo"><i class="fas fa-user-check logo-img"></i>SAS</div>
+        <li><a href="./index.html" class="dashboard"><i class="fas fa-tachometer-alt icons"></i>Dashboard</a></li>
+        <li><a href="./reports.html" class="reports"><i class="far fa-file-pdf icons"></i></i>Reports</a></li>
+        <li><a href="#" class="management"><i class="fas fa-tasks icons"></i>Management</a></li>
+      </ul>
+    </aside>
+    <div class="navbar-horizontal">
+      <div class="navbar-horizontal-content">
+        <span class="username text-size-32 userinfo">Koshiya Dev Nareshbhai Laxmanbhai Amarshibhai</span>
+        <div class="notification-group">
+          <button onclick="showNotification()" class="notification-btn fas fa-bell fa-2x userinfo"></button>
+          <div id="notification-dropdown" class="dropdown-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, nam!</p><hr class="notification-line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sapiente dolores sequi illum quae commodi!</p><hr class="notification-line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam beatae ut aspernatur modi ad consequuntur sunt aliquam asperiores non, quos quasi harum, quo porro placeat est, sapiente veritatis magni!</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="management-option">
+		<h2>Found Wrong Data?</h2>
+		<form action="#" method="get">
+			<select name="subject-list" id="subject-list">
+				<option value="" disabled selected required>Which Subject</option>
+				<option value="sub1-ds">DS</option>
+				<option value="sub2-dbms">DBMS</option>
+				<option value="sub3-ps">PS</option>
+				<option value="sub4-df">DF</option>
+				<option value="sub5-ic">IC</option>
+				<option value="sub6-de">DE</option>
+			</select>
+			<input type="date" id="wrong-att-date" name="Wrong Attandance Date" required>
+			<textarea name="Wrong Attandance Description" id="wrong-att-description" cols="40" rows="5" maxlength="200" placeholder="Write About Issue" required></textarea>
+			<input type="submit" value="Send Issue">
+		</form>
+    </div>
+  </section>
+  <script src="https://kit.fontawesome.com/05499ccf49.js" crossorigin="anonymous"></script>
+  <script src="js/management.js"></script>
+  <script src="js/student_navbar.js"></script>
+</body>
