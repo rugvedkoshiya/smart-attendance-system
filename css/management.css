@@ -3,6 +3,10 @@
   left: 230px;
 }
 
+.navbar-horizontal{
+  position: relative;
+}
+
 .management-option {
   border: 2px solid #222D32;
   border-radius: 1rem;

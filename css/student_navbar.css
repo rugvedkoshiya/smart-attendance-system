@@ -38,8 +38,8 @@ a:link {
 .sidebar {
   background-color: #222d32;
   width: 230px;
-  position: absolute;
-  height: 100%;
+  position: fixed;
+  height: 100vh;
   top: 0;
   left: 0;
 }
@@ -67,9 +67,12 @@ a:link {
 
 /* ########## Horizontalbar ########## */
 .navbar-horizontal {
-  position: relative;
+  height: 60px;
+  width: 84vw;
+  position: fixed;
   background-color: #3c8dbc;
   margin-left: 230px;
+  z-index: 3;
 }
 
 .navbar-horizontal-content {
@@ -94,6 +97,7 @@ a:link {
   padding: 0.2em 0;
   font-size: 23.5px;
   background-color: #367fa9;
+  height: 60px;
 }
 
 /* ########## Notification Styling ########## */
